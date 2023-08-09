@@ -1,6 +1,6 @@
 # Weather App using React, Tailwind CSS, PostCSS, and OpenWeather API
 
-![Weather App Screenshot](Downloads/weather.png)
+![Weather App Screenshot](src/assets/img/weather.png)
 
 This project is a simple and stylish Weather App built using React, Tailwind CSS, PostCSS, and the OpenWeather API. It allows users to quickly check the current weather conditions, temperature, and other relevant weather information for a specific location.
 
