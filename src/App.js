@@ -126,12 +126,11 @@ const App = () => {
 
   return (
     <div className='w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0'>
-      <div className='h-8' />
 
       {/* Error Message */}
-      <div className={`w-full max-w-[450px] h-[60px] bg-pink-500 text-white rounded-md p-4 mb-8 ${errorMsg ? '' : 'hidden'}`}>
-        {errorMsg && errorMsg.response.data.message}
-      </div>
+      {errorMsg && (
+        <div>{`${errorMsg.response.data.message}`}</div>
+      )}
 
       {/* Form */}
       <form className={`${animate ? 'animate-shake' : 'animate-none'} h-16 bg-black/30 w-full max-w-[450px] rounded-full backdrop-blur-[32px] mb-8`}>
@@ -160,7 +159,7 @@ const App = () => {
                 </div>
                 {/* Date */}
                 <div>
-                  {date.getUTCDate()}/{date.getUTCMonth() + 1}/{date.getUTCFullYear()}
+                  {date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()}
                 </div>
               </div>
             </div>
